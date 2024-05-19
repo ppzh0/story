@@ -1,0 +1,12 @@
+ErrorDocument 403 /forbidden.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /serverError.html
+ErrorDocument 502 /badGateway.html
+
+# apparently, this configuration file doesn't work
+# on github, since github doesn't allow contributors to
+# mess around with domain stuffs (redirections)
+#
+# this doesn't work on localhost either, but added this 
+# so that devs can simulate some realistic errors on 
+# hosting services such as vercel, netilify
