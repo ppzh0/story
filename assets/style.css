@@ -8,8 +8,34 @@ body {
     font: 130% / 1.6 serif;
 }
 
-blockquote {
+blockquote,
+.quote {
     font-style: oblique;
+}
+
+section#notice {
+    max-width: 690px;
+    margin: auto;
+}
+
+a:not(ul li a, .credit a):link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:not(ul li a, .credit a):hover {
+    color: cyan;
+}
+
+a:not(ul li a, .credit a):visited {
+    color: dimgrey;
+}
+
+section#notice:hover {
+    color: #fff;
+    background-color: #000;
+    border-radius: 6px;
+    padding: 1.6em;
 }
 
 @media screen and (max-width: 599px) {
@@ -27,5 +53,11 @@ blockquote {
         background-color: #ff000050;
         padding: 20px 30%;
         border-radius: 12px;
+    }
+
+    section#notice:hover {
+        padding: 0;
+        background-color: transparent;
+        color: #000;
     }
 }
