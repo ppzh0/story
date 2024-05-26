@@ -26,12 +26,22 @@
             place-items: center;
             text-transform: capitalize;
         }
+
+        #showOnMobile {
+            display: none;
+        }
+        
+        @media screen and (max-width: 400px) {
+            #showOnMobile {
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body>
     <section id="notice">
-        content you've requested was not found on this repository &#124; <a href="/">index</a>
+        content you've requested was not found <br id="showOnMobile"> on this repository &#124; <a href="/">index</a>
     </section>
 </body>
 
