@@ -6,10 +6,17 @@
 
 body {
     font: 130% / 1.6 serif;
+
+    width: min(600px, calc(70% + 100px));
+    margin: 0 auto;
+
+    & blockquote {
+        padding-bottom: 1rem;
+    }
+    
 }
 
-blockquote,
-.quote {
+blockquote {
     font-style: oblique;
 }
 
