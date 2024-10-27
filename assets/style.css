@@ -38,13 +38,6 @@ a:not(ul li a, .credit a):visited {
     color: dimgrey;
 }
 
-section#notice:hover {
-    color: #fff;
-    background-color: #000;
-    border-radius: 6px;
-    padding: 1.6em;
-}
-
 @media screen and (max-width: 599px) {
     body {
         font-size: 100%;
