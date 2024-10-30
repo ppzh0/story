@@ -54,12 +54,12 @@ section:has(.footnote-title) {
 }
 
 /* link playground */
-a:not(#storyBoard, .credit a):link {
+a:not(#storyBoard li a, .credit a):link {
     text-decoration: none;
     color: hsla(211, 100%, 29%, 0.9);
 }
 
-a:not(#storyBoard, .credit a):hover {
+a:not(#storyBoard li a, .credit a):hover {
     text-decoration: underline;
     color: hsla(60, 100%, 11%, 0.85);
     background-color: hsla(60, 100%, 50%, 0.85);
