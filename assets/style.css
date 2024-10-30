@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
     & blockquote {
         padding-bottom: 1rem;
     }
-    
+
 }
 
 blockquote {
@@ -25,19 +26,50 @@ section#notice {
     margin: auto;
 }
 
-a:not(ul li a, .credit a):link {
+/* footnote css section */
+summary {
+    user-select: none;
+    cursor: pointer;
+}
+
+summary::marker {
+    content: "▶ ";
+    font-size: 1.9rem;
+}
+
+section:has(.footnote-title) {
+    margin-top: 3em;
+}
+
+.footnote-title {
+    font-size: 2rem;
+}
+
+.footnote-redirect {
+    font-style: normal;
+}
+
+.footnote-placeholder {
+    font-size: 1.2rem;
+}
+
+/* link playground */
+a:not(#storyBoard, .credit a):link {
     text-decoration: none;
-    color: #007bff;
+    color: hsla(211, 100%, 29%, 0.9);
 }
 
-a:not(ul li a, .credit a):hover {
-    color: cyan;
+a:not(#storyBoard, .credit a):hover {
+    text-decoration: underline;
+    color: hsla(60, 100%, 11%, 0.85);
+    background-color: hsla(60, 100%, 50%, 0.85);
 }
 
-a:not(ul li a, .credit a):visited {
+a:visited {
     color: dimgrey;
 }
 
+/* layout and accessibility for mobile devices */
 @media screen and (max-width: 599px) {
     body {
         font-size: 100%;
