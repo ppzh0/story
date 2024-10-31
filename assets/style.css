@@ -36,17 +36,12 @@ summary {
     cursor: pointer;
 }
 
-summary::marker {
-    content: "▶ ";
-    font-size: 1.9rem;
-}
-
 section:has(.footnote-title) {
     margin-top: 3em;
 }
 
 .footnote-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .footnote-redirect {
