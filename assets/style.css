@@ -45,37 +45,59 @@ p {
     padding: 0 10px;
 }
 
-/* footnote css section */
+/* Footnote container styles */
 summary {
     user-select: none;
     cursor: pointer;
 }
 
-details a {
-    word-break: break-all;
+details[open] summary {
+    color: #333;
+    font-weight: bold;
 }
 
+/* Styling for links inside footnotes */
+details a {
+    word-break: break-all; /* Ensures long URLs or words break to fit in the available space */
+}
+
+/* Section containing footnotes */
 section:has(.footnote-divider) {
     margin-top: 3em;
 }
 
+/* Footnote divider (title) styling */
 .footnote-divider {
     font-size: 1.6rem;
 }
 
-.reference {
+/* Reference (footnote marker) style in text */
+.footnote-ref {
     unicode-bidi: isolate;
     white-space: nowrap;
     font-weight: normal;
     font-style: normal;
 }
 
-sup.reference {
+/* Smaller font size for the superscript footnote-ref */
+sup.footnote-ref {
     font-size: 75%;
 }
 
+/* General footnotes container styles */
 .footnotes {
-    word-wrap: break-word;
+    word-wrap: break-word; /* Allows long words or URLs to break and fit within the container */
+    margin-top: 1em;
+    padding-left: 20px;
+}
+
+.footnotes ol,
+.footnotes ul {
+    padding-left: 25px;
+}
+
+.footnotes ol>li {
+    margin-bottom: 10px;
 }
 
 *:target {
