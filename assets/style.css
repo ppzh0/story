@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Alsina;
+    src: url(Alsina.ttf);
+}
+
 *,
 *::before,
 *::after {
@@ -92,10 +97,6 @@ sup.footnote-ref {
     padding-left: 20px;
 }
 
-.footnotes ol,
-.footnotes ul {
-    padding-left: 25px;
-}
 
 .footnotes ol>li {
     margin-bottom: 10px;
