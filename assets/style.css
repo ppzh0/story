@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    scroll-padding-top: 3rem;
     scroll-behavior: smooth;
 }
 
@@ -102,7 +103,7 @@ sup.footnote-ref {
 
 *:target {
     transition: all 2s ease-in-out;
-    background-color: hsla(60, 100%, 50%, 0.6);
+    background-color: hsla(60, 100%, 50%, 0.3);
 }
 
 /* link playground */
