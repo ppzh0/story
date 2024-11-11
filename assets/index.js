@@ -5,3 +5,19 @@ const isMozilla = navigator.userAgent.includes('Mozilla/') && !navigator.userAge
 if (isMozilla) {
     document.getElementById('mozOpen').setAttribute('open', 'open');
 }
+
+// Change font if the checkbox is checked
+const toggleFontBtn = document.getElementById('toggleFontBtn');
+let isSerif = true;  // Track current font
+
+toggleFontBtn.addEventListener('click', function () {
+    if (isSerif) {
+        document.body.style.fontFamily = 'Alsina, sans-serif';
+        document.body.style.fontSize = '2.6rem';
+    } else {
+        document.body.style.fontFamily = 'serif';
+        document.body.style.fontSize = '130%';
+    }
+    // Toggle the font state
+    isSerif = !isSerif;
+});
