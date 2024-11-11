@@ -9,6 +9,8 @@
     box-sizing: border-box;
     scroll-padding-top: 3rem;
     scroll-behavior: smooth;
+    /* css debug */
+    /* background-color: hsla(120, 100%, 25%, 0.1); */
 }
 
 body {
@@ -21,6 +23,12 @@ body {
         padding-bottom: 1rem;
     }
 
+}
+
+body {
+    scroll-snap-type: y proximity;
+    /* scroll-snap-align: center; */
+    scroll-padding-top: 20px;
 }
 
 /* scrollbar shit */
