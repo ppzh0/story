@@ -14,7 +14,8 @@
 }
 
 body {
-    font: 130% / 1.6 serif;
+    /* font: 130% / 1.6 serif; */
+    font: 130% / 30px serif;
 
     width: min(600px, calc(70% + 100px));
     margin: 0 auto;
