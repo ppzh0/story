@@ -1,12 +1,21 @@
+@font-face {
+    font-family: Alsina;
+    src: url(Alsina.ttf);
+}
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    scroll-padding-top: 3rem;
     scroll-behavior: smooth;
+    /* css debug */
+    /* background-color: hsla(120, 100%, 25%, 0.1); */
 }
 
 body {
-    font: 130% / 1.6 serif;
+    /* font: 130% / 1.6 serif; */
+    font: 130% / 30px serif;
 
     width: min(600px, calc(70% + 100px));
     margin: 0 auto;
@@ -15,6 +24,27 @@ body {
         padding-bottom: 1rem;
     }
 
+}
+
+body {
+    scroll-snap-type: y proximity;
+    /* scroll-snap-align: center; */
+    scroll-padding-top: 20px;
+}
+
+/* scrollbar shit */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
 }
 
 blockquote {
@@ -30,37 +60,67 @@ p {
     padding: 0 10px;
 }
 
-/* footnote css section */
+/* Footnote container styles */
 summary {
     user-select: none;
     cursor: pointer;
 }
 
-section:has(.footnote-title) {
+details[open] summary {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Styling for links inside footnotes */
+details a {
+    word-break: break-all; /* Ensures long URLs or words break to fit in the available space */
+}
+
+/* Section containing footnotes */
+section:has(.footnote-divider) {
     margin-top: 3em;
 }
 
-.footnote-title {
+/* Footnote divider (title) styling */
+.footnote-divider {
     font-size: 1.6rem;
 }
 
-.footnote-redirect {
+/* Reference (footnote marker) style in text */
+.footnote-ref {
+    unicode-bidi: isolate;
+    white-space: nowrap;
+    font-weight: normal;
     font-style: normal;
 }
 
-.footnote-placeholder {
-    font-size: 1.2rem;
+/* Smaller font size for the superscript footnote-ref */
+sup.footnote-ref {
+    font-size: 75%;
+}
+
+/* General footnotes container styles */
+.footnotes {
+    word-wrap: break-word; /* Allows long words or URLs to break and fit within the container */
+    margin-top: 1em;
+    padding-left: 20px;
+}
+
+
+.footnotes ol>li {
+    margin-bottom: 10px;
 }
 
 *:target {
     transition: all 2s ease-in-out;
-    background-color: hsla(60, 100%, 50%, 0.6);
+    background-color: hsla(60, 100%, 50%, 0.3);
 }
 
 /* link playground */
 a:not(#storyBoard li a, .credit a):link {
     text-decoration: none;
     color: hsla(211, 100%, 29%, 0.9);
+    transition: all .3s ease-in-out;
 }
 
 a:not(#storyBoard li a, .credit a):hover {
