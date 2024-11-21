@@ -41,9 +41,9 @@ It can be said that this is a pretty simple and not very effective folder struct
 ## Formats (text punctuation)
 This is the format for writing paragraphs and text in the folders. All pages have to use this formatting for correct display of punctuations.
 ```html
-left double quotation mark - &#8220;
-right double quotation mark - &#8221;
+left double quotation mark - &OpenCurlyDoubleQuote;
+right double quotation mark - &CloseCurlyDoubleQuote;
 
 apostrophe - &#8217;
-comma - &#44;
+comma - &comma;
 ```
