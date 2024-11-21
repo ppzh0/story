@@ -47,6 +47,7 @@ body {
     background-color: #000000;
 }
 
+/* quoting styles */
 blockquote {
     font-style: oblique;
 }
@@ -58,6 +59,13 @@ section#notice {
 
 p {
     padding: 0 10px;
+}
+
+figure {
+    background-color: hsla(60, 100%, 50%, 0.2);
+    margin: calc(100% / 18);
+    padding: 6px 10px;
+    border-radius: 4px;
 }
 
 /* Footnote container styles */
