@@ -1,7 +1,7 @@
 # Inoue
 This nested folder structure is based on the order of appearance of the story on the main page of this site. You can see the name of the story in the `root/index.html`.
 
-# Directory Structure
+## Directory Structure
 
 It can be said that this is a pretty simple and not very effective folder structure/nesting. Anyhow, more folders can be add according to the following folder tree:
 
@@ -27,7 +27,7 @@ It can be said that this is a pretty simple and not very effective folder struct
         .
         .
 ```
-# Footnote Css
+## Footnote Css
 | Class                     | Description                                                               |
 | ---                       | ---                                                                       |
 | `footnote-divider`        | The "Footnote & Resources" title to be distinguished from other elements  |
@@ -37,3 +37,13 @@ It can be said that this is a pretty simple and not very effective folder struct
 | ---                       | ---                                                                       |
 | `footnote-{uniquePhrase}` | unique phrase for footnote ID                                             |
 | `ref_{num}`               | reference back to the subscript that indicate footnote is available       |
+
+## Formats (text punctuation)
+This is the format for writing paragraphs and text in the folders. All pages have to use this formatting for correct display of punctuations.
+```html
+left double quotation mark - &#8220;
+right double quotation mark - &#8221;
+
+apostrophe - &#8217;
+comma - &#44;
+```
