@@ -128,7 +128,7 @@ sup.footnote-ref {
 a:not(#storyBoard li a, .credit a):link {
     text-decoration: none;
     color: hsla(211, 100%, 29%, 0.9);
-    transition: all .3s ease-in-out;
+    transition: background-color .1s ease-out, color .4s ease-in;
 }
 
 a:not(#storyBoard li a, .credit a):hover {
