@@ -30,6 +30,12 @@ body {
     scroll-snap-type: y proximity;
     /* scroll-snap-align: center; */
     scroll-padding-top: 20px;
+    scroll-behavior: smooth;
+}
+
+p {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 /* scrollbar shit */
@@ -81,7 +87,8 @@ details[open] summary {
 
 /* Styling for links inside footnotes */
 details a {
-    word-break: break-all; /* Ensures long URLs or words break to fit in the available space */
+    word-break: break-all;
+    /* Ensures long URLs or words break to fit in the available space */
 }
 
 /* Section containing footnotes */
@@ -109,7 +116,8 @@ sup.footnote-ref {
 
 /* General footnotes container styles */
 .footnotes {
-    word-wrap: break-word; /* Allows long words or URLs to break and fit within the container */
+    word-wrap: break-word;
+    /* Allows long words or URLs to break and fit within the container */
     margin-top: 1em;
     padding-left: 20px;
 }
