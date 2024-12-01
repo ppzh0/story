@@ -22,3 +22,11 @@ toggleFontBtn.addEventListener("click", function () {
     // Toggle the font state
     isSerif = !isSerif;
 });
+
+// For redirecting to mysterious link
+function mysterious() {
+    const linkToDirect = "https://wikipedia.org/wiki/Special:Random";
+    let nameOfPopupWindow = "mysteriousSite";
+    const windowFeatures = 'screenX=40,screenY=30,width=800,height=600';
+    window.open(linkToDirect, nameOfPopupWindow, windowFeatures);
+}
