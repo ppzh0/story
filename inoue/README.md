@@ -8,7 +8,8 @@ It can be said that this is a pretty simple and not very effective folder struct
 ```
 ./inoue
     |-- {numberedFolder}
-    |   |-- assets
+    |   |-- assets (if and only if something changes 
+    |   |   |       `assets` folder will be created)
     |   |   |-- css
     |   |       - style.css
     |   |   |-- js
